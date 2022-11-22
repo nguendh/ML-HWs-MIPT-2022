@@ -31,7 +31,7 @@ class LossAndDerivatives:
         """
 
         # YOUR CODE HERE    
-        return np.mean(np.absolute(X.dot(w)-Y))
+        return np.mean(np.abs(X.dot(w)-Y))
 
     @staticmethod
     def l2_reg(w):
