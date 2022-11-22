@@ -56,7 +56,7 @@ class LossAndDerivatives:
         """
 
         # YOUR CODE HERE
-        return np.sum(np.absolute(w))
+        return np.sum(np.abs(w))
 
     @staticmethod
     def no_reg(w):
