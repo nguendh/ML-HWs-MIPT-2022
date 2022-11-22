@@ -100,7 +100,7 @@ class LossAndDerivatives:
 
         # YOUR CODE HERE
 
-        return X.T.dot(2*(X.dot(w)>Y)-1)/Y.size
+        return (X.T).dot(np.sign(X.dot(w)-Y))/Y.size
 
     @staticmethod
     def l2_reg_derivative(w):
