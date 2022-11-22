@@ -123,7 +123,7 @@ class LossAndDerivatives:
         """
 
         # YOUR CODE HERE
-        return 2*(w > 0)-1
+        return np.sign(w)
 
     @staticmethod
     def no_reg_derivative(w):
